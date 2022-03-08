@@ -1,13 +1,16 @@
 <template>
     <child-component @send-message="sendMessage" ref="child_component"></child-component>
+    <button type="button" @click="changeChildData">Change Child Data</button>
 </template>
 <script>
 import ChildComponent from './ChildComponent'
 
 export default {
     components: {ChildComponent},
-    mounted(){
-        this.$refs.child_component.childFunc()
+    methods:{
+        changeChildData(){
+            this.$refs.child_component.msg = '부모 컴포넌트가 변경한 데이터'
+        }
     }    
 }
 </script>
