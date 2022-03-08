@@ -7,7 +7,7 @@ import ChildComponent from './ChildComponent'
 export default {
     components: {ChildComponent},
     mounted(){
-        this.$refs.child_component.$refs.btn.click()
+        this.$refs.child_component.childFunc()
     }    
 }
 </script>
