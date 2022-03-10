@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import DataBinding from '../views/DataBinding.vue'
 import NestedComponent from '../views/NestedComponent.vue'
 import ParentComponent from '../views/ParentComponent.vue'
+import ProvideInject from '../views/ProvideInject.vue'
 
 const routes = [
   {
@@ -11,19 +12,24 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/databinding',
-    name: 'databinding',
+    path: '/data_binding',
+    name: 'data_binding',
     component: DataBinding
   },
   {
-    path: '/nestedcomponent',
-    name: 'nestedcomponent',
+    path: '/nested_component',
+    name: 'nested_component',
     component: NestedComponent
   },
   {
-    path: '/parentcomponent',
-    name: 'parentcomponent',
+    path: '/parent_component',
+    name: 'parent_component',
     component: ParentComponent
+  },
+  {
+    path: '/provide_inject',
+    name: 'provide_inject',
+    component: ProvideInject
   },
   {
     path: '/about',
