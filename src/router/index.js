@@ -6,6 +6,9 @@ import ParentComponent from '../views/ParentComponent.vue'
 import ProvideInject from '../views/ProvideInject.vue'
 import Calculator from '../views/CalculatorOptionAPI.vue'
 import Calculator2 from '../views/CalcualtorCompositionAPI.vue'
+import CompositionAPIProvideAndInject from '../views/ComponsitionAPIProvide.vue'
+import Mixins from '../views/ApiMixins.vue'
+import PluginExam from '../views/PluginExam.vue'
 
 const routes = [
   {
@@ -42,6 +45,21 @@ const routes = [
     path: '/calculator2',
     name: 'calculator2',
     component: Calculator2
+  },
+  {
+    path: '/compositionapiprovideandinject',
+    name: 'compositionapiprovideandinject',
+    component: CompositionAPIProvideAndInject
+  },
+  {
+    path: '/mixins',
+    name: 'mixins',
+    component: Mixins
+  },
+  {
+    path: '/plugins',
+    name: 'plugins',
+    component: PluginExam
   },
   {
     path: '/about',
