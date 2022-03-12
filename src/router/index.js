@@ -4,6 +4,8 @@ import DataBinding from '../views/DataBinding.vue'
 import NestedComponent from '../views/NestedComponent.vue'
 import ParentComponent from '../views/ParentComponent.vue'
 import ProvideInject from '../views/ProvideInject.vue'
+import Calculator from '../views/CalculatorOptionAPI.vue'
+import Calculator2 from '../views/CalcualtorCompositionAPI.vue'
 
 const routes = [
   {
@@ -30,6 +32,16 @@ const routes = [
     path: '/provide_inject',
     name: 'provide_inject',
     component: ProvideInject
+  },
+  {
+    path: '/calculator',
+    name: 'calculator',
+    component: Calculator
+  },  
+  {
+    path: '/calculator2',
+    name: 'calculator2',
+    component: Calculator2
   },
   {
     path: '/about',
